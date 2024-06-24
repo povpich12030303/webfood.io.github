@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./img/icon.acleda" />
+    <link href="./hi.css" rel="stylesheet" />
+    <title>Login Form ACLEDA Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-img">
+        <img src="./img/pic.jpg" />
+      </div>
+      <div class="form">
+        <h2>Create your free account</h2>
+        <p>Already using Coinbit ? <span>Login here.</span></p>
+        <div class="img-google">
+          <img src="./img/icon.google.jpg" />
+        </div>
+        <button class="btn2">Get started with google</button>
+
+        <div class="main-line">
+          <div class="line"></div>
+          <p class="text-inline">or Get strated with Email</p>
+          <div class="line1"></div>
+        </div>
+        <div class="input-group">
+          <i class="fa-regular fa-circle-user"></i>
+          <input type="text" id="username" />
+          <label for="">Name:</label>
+        </div>
+        <div class="input-group">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" id="password" />
+          <label for="">Email:</label>
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            id="email"
+            type="password"
+            placeholder="Password (minimum 6 chareacters)"
+          />
+        </div>
+        <div class="check">
+          <input type="checkbox" />
+          <p>I agree to <span>Terms & Conditions</span></p>
+        </div>
+
+        <div class="foter">
+          <button class="btn">Get started</button>
+          <p class="textxx">
+            No create card required. No need to install softwaer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const Button = document.querySelector(".btn");
+      Button.addEventListener("click", function () {
+        // Get input values
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+
+        // Dummy check for username and password
+        if (username === "user" && password === "user@1" && email === "1234") {
+          alert("Login successful!");
+          window.location = "";
+          // Here you can redirect the user to another page or perform other actions
+        } else {
+          alert("Incorrect username or password. Please try again.");
+        }
+      });
+    </script>
+  </body>
+</html>
